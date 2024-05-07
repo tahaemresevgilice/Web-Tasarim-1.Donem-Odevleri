@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kayıt Formu</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: white;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-image: url("images-hend.jpg");
+            background-position: center;
+            background-size: cover;
+        }
+
+        .container {
+            background-color: white;
+            border: gray 1px solid;
+            border-radius: 5px;
+            padding: 20px;
+            width: 300px;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: block;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"] {
+            width: 95%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Kayıt Formu</h2>
+        <form>
+            <div class="form-group">
+                <label for="ad">Adınız:</label>
+                <input type="text" id="ad" name="ad" required pattern="[a-zA-ZğüşıöçĞÜŞİÖÇ\s]+">
+            </div>
+
+            <div class="form-group">
+                <label for="email">Kullanıcı adı:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="sifre">Şifre (en az 6 karakter):</label>
+                <input type="password" id="sifre" name="sifre" required minlength="6">
+            </div>
+
+            <div class="form-group">
+                <button type="submit">Kayıt Ol</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

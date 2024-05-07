@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İş Başvuru Formu</title>
+    <style>
+table{
+    color: aqua;
+    background-color: rgb(41, 45, 71);
+    width: 50%;
+    height: 800px;
+    font: caption;
+    box-shadow: 0px 0px 10px 0px #000;
+}
+input[type="text"]{
+    width: 99%;
+    height: 25px;
+    border-radius: 8px;
+    border: 2px aqua;
+} 
+
+
+ input[type="submit"] {
+            background-color: rgb(41, 45, 71);
+            color: aqua;
+            border: aqua;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%; 
+}
+textarea{
+    background-color: rgb(41, 45, 71);
+    width: 99%;
+    height: 96%;
+}
+body{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+    </style>
+</head>
+<body style="background-image:url('images-hend.jpg');">
+    <center>
+    <table border="1" style="border: aqua;">
+        <tr style="text-align: center;">
+            <td colspan="2"><h1>İş Başvuru Formu</h1></td>
+        </tr>
+        <tr>
+            <th>Adı</th>
+            <td><input type="text" name="ad" id="ad"></td>
+        </tr>
+        <tr>
+            <th>Soyadı</th>
+            <td><input type="text" name="soyad" id="soyad"></td>
+        </tr>
+        <tr>
+            <th>Doğum Tarihi</th>
+            <td><input type="date" name="dogumTarihi" id="dogumTarihi"></td>
+        </tr>
+        <tr>
+            <th>Doğum Yeri</th>
+            <td>
+                <select name="dogumYeri" id="dogumYeri">
+                    <option value="Istanbul">İstanbul</option>
+                    <option value="Ankara">Ankara</option>
+                    <option value="Izmir">İzmir</option>
+                    <option value="Antalya">Antalya</option>
+                    <option value="Bursa">Bursa</option>
+                    <option value="Adana">Adana</option>
+                    <option value="Mersin">Mersin</option>
+                    <option value="Eskisehir">Eskişehir</option>
+                    <option value="Trabzon">Trabzon</option>
+                    <option value="Gaziantep">Gaziantep</option>
+                    <option value="Konya">Konya</option>
+                    <option value="Kayseri">Kayseri</option>
+                    <option value="Mardin">Mardin</option>
+                    <option value="Samsun">Samsun</option>
+                    <option value="Malatya">Malatya</option>
+                    <option value="Malatya">Kars</option>
+                    <option value="Malatya">Kastamonu</option>
+                    <option value="Malatya">Ağrı</option>
+                    <option value="Malatya">Siirt</option>
+                    <option value="Malatya">Bitlis</option>
+                    <option value="Malatya">Muş</option>
+                    <option value="Malatya">Aydın</option>z
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <th>Cinsiyet</th>
+            <td><label id="erkek">Erkek</label><input type="radio" name="Cinsiyet" id="erkek" checked><label id="kız">Kız</label><input type="radio" name="Cinsiyet" id="kız"></td>
+        </tr>
+        <tr>
+            <th>Referanslar</th>
+            <td><textarea name="referans" id="rfr" cols="60" rows="4"></textarea></td>
+        </tr>
+        <tr>
+            <th>Alışkanlıklar</th>
+            <td><label id="içen">Sigara Kullanıyorum</label><input type="radio" name="alsknlk" id="içen"><label id="içmeyen">Kullanmıyorum</label><input type="radio" name="alsknlk" id="içmeyen"checked><label id="sosyal">Sosyal İçiciyim</label><input type="radio" name="alsknlk" id="sosyal"></td>
+        </tr>
+        <tr>
+            <th>Yabancı Dil</th>
+            <td>
+                <input type="checkbox">İngilizce<br>
+                <input type="checkbox">Almanca<br>
+                <input type="checkbox">Fransızca<br>
+                <input type="checkbox">İspanyolca<br>
+                <input type="checkbox">Çince <br>
+                <input type="checkbox">Rusça<br>
+            </td>
+        </tr>
+        <tr>
+            <th>Askerlik Durumu</th>
+            <td>
+                <select name="askerlikDurumu" id="askerlikDurumu">
+                    <option value="Yaptım">Yaptım</option>
+                    <option value="Yapmadım">Yapmadım</option>
+                    <option value="Tescilli">Tescilli</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <th>Eğitim Durumu</th>
+            <td>
+                <select name="askerlikDurumu" id="askerlikDurumu">
+                    <option>Orta Okul</option>
+                    <option>Lise</option>
+                    <option>Üniversite</option>
+                    <option>Lisans</option>
+                    <option>Yüksek Lisans</option>
+                    <option>Doktora</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <th>Geçmiş İşler</th>
+            <td><textarea name="referans" id="rfr" cols="60" rows="4"></textarea></td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <form>
+                    <input type="submit" value="Başvuruyu Gönder">
+                </form>
+            </td>
+        </tr>
+    </table>
+</center>
+</body>
+</html>

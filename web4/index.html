@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IBM Yazılım-Hizmet Sözleşmesi</title>
+    <link rel="icon" type="image/x-icon" href="ibm-logo-svg.ico">
+    <style>
+form{
+    color: aqua;
+    box-shadow: 0px 0px 10px 0px #000;
+    }
+    .form-group {
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"]{
+    width: 98%;
+    padding: 10px;
+    background-color: rgb(41, 45, 71);;
+    border-color: aqua;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+.form-group input[type="number"]{
+    width: 98%;
+    padding: 10px;
+    background-color: rgb(41, 45, 71);;
+    border-color: aqua;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+.form-group input[type="text"]:focus,
+.form-group input[type="email"]:focus,.form-group input[type="number"]:focus{
+    box-shadow: 0 0 5px 2px aqua;
+}
+
+fieldset{
+    border-color: aqua;
+}
+select{
+    border-color: aqua;
+    background-color: rgb(41, 45, 71);
+    color: aqua;
+}
+textarea{
+    border-color: aqua;
+    background-color: rgb(41, 45, 71);
+    color: aqua;
+}
+#scrollable-dropdown {
+  height: 150px; 
+  overflow-y: scroll; 
+}
+.left{
+    float: left;
+}
+.slc{
+    float: left;
+    margin-left: 10px;
+}
+.radio-group{
+    float: left;
+    text-align: left;
+    margin-left: 20px;
+}
+.sd{
+    float: left;
+}
+textarea{
+    width: 100%;
+}
+.mail-list-group{
+    text-align: left;
+}
+h1{
+    display: inline;
+    margin-left: 15px;
+}
+.header{
+    margin-top: 20px;
+}
+body{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.content-counteiner{
+    margin-bottom: 20px;
+}
+.so-group{
+    margin-bottom: 5px;
+}
+    </style>
+</head>
+<body style="background-image: url('images-hend.jpg'); margin: 0; padding: 0;font-family: Arial, sans-serif;">
+    <div class="header">
+    <center><img src="IBM_logo.svg.png" width="60" height="25"><h1 style="color: rgb(28,108,196);">Yazılım-Hizmet Sözleşmesi</h1></center>
+    </div>
+<center>
+    <div class="content-counteiner" style="width: 50%; background-color: rgb(41, 45, 71);">
+    <form id="myForm">
+        <fieldset><legend>Sözleşme Onay</legend>
+            <div class="so-group">
+            <label>
+                <input type="checkbox">Aşağıdakilerin doğruluğunu kabul ediyorum ve onaylıyorum.
+            </label>
+            </div>
+            <br>
+            <input type="submit" value="Formu Kaydet" style="background-color: rgb(41, 45, 71);color: aqua;border-radius: 8px;border: 2px solid aqua"> <input type="button" value="Formu Temizle" onclick="clearForm()"style="background-color: rgb(41, 45, 71);color: aqua;border-radius: 8px;border: 2px solid aqua">
+        </fieldset>
+        <fieldset>
+            <legend>Kişisel Bilgiler</legend>
+            <div class="form-group">
+                <label for="formGüvenliID">Form Güvenli ID</label>
+                <input type="text" id="formGüvenliID">
+            </div>
+            <div class="form-group">
+                <label for="ad">Ad</label>
+                <input type="text" id="ad">
+            </div>
+            <div class="form-group">
+                <label for="soyad">Soyad</label>
+                <input type="text" id="soyad">
+            </div>
+            <div class="form-group">
+                <label for="yas">Yaş</label>
+                <input type="number" id="yas" min="18" max="40">
+            </div>
+            <div class="form-group">
+                <label for="mailAdres">Mail Adres</label>
+                <input type="email" id="mailAdres">
+            </div>
+            <div class="form-group">
+                <label for="fotograf">Fotoğraf Ekle</label><input type="file" id="fotograf">
+            </div>
+        </fieldset>
+
+        <fieldset id="otherInfo">
+            <legend>Diğer Bilgiler</legend>
+            <h4>Burdaki Alanlar Mesleki Deneğimi Kapsar</h4>
+
+            <div class="left">
+            <label>Sektöre Giriş Tarihi:</label>
+            <input type="date" id="entryDate" name="entryDate" min="1990-01-01"><br>
+            </div><br><br>
+
+            <div class="sd">
+            <label for="experience">Sektör Deneyimi:</label>
+            </div>
+            <div class="radio-group"><br>
+            <label>
+                <input type="radio" id="exp1-5" name="experience" value="1-5 Yıl">
+                1-5 Yıl
+            </label>
+            <br>
+            <label>
+                <input type="radio" id="exp6-10" name="experience" value="6-10 Yıl">
+                6-10 Yıl
+            </label>
+            <br>
+            <label>
+                <input type="radio" id="exp11-15" name="experience" value="11-15 Yıl">
+                11-15 Yıl
+            </label>
+            <br>
+            <label>
+                <input type="radio" id="exp15+" name="experience" value="15+ Yıl">
+                15+ Yıl
+            </label><br>
+            </div><br><br><br><br><br><br>
+            <div class="left">
+            <label for="programmingLanguages">Programlama Dilleri:</label><br>
+            </div>
+            <select id="scrollable-dropdown name=" class="slc" multiple>
+                <option value="C">C</option>
+                <option value="Java">Java</option>
+                <option value="Python">Python</option>
+                <option value="JavaScript">JavaScript</option>
+                <option value="C++">C++</option>
+            </select>
+        </fieldset>
+        <fieldset>
+            <legend>Sözleşme Kopyası</legend>
+            <textarea readonly rows="6" cols="50">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi libero odit ex aliquid veniam saepe error quibusdam voluptatum, repellendus hic nulla natus voluptatem, labore dicta ipsum fuga architecto esse nesciunt autem quasi ducimus quidem aperiam officia nisi! Voluptatem nam iure dolores, alias inventore facilis incidunt facere ipsum error tempora debitis rerum sequi consectetur hic ex expedita vero repudiandae cumque, nesciunt voluptas adipisci! Cupiditate quisquam suscipit recusandae magni vero voluptas, aliquid velit dolores, sint, natus hic ducimus architecto assumenda iure repudiandae.</textarea>
+        </fieldset>
+        <fieldset>
+            <legend class="bold-label">Mail Listesi</legend>
+            <div class="mail-list-group">
+            <label for="katilmakIstiyorum">
+                <input type="radio" id="katilmakIstiyorum" name="mailListesiSecimi" value="Katılmak İstiyorum">
+                Mail listesine katılmak <b>istiyorum</b>
+            </label>
+            <br>
+            <label for="katilmakIstemiyorum">
+                <input type="radio" id="katilmakIstemiyorum" name="mailListesiSecimi" value="Katılmak İstemiyorum">
+                Mail listesine katılmak <b>istemiyorum</b>
+            </label>
+            </div>
+        </fieldset>
+    </form>
+</div>
+</center>
+    <script>
+        function clearForm() {
+            document.getElementById("myForm").reset();
+        }
+    </script>
+</body>
+</html>

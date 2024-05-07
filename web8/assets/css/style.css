@@ -1,0 +1,571 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    list-style-type: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    margin-top: 50px;
+}
+.menu{
+    background-color: white;
+    width: 100%;
+    height: 80px;
+    padding: 15px;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+.menu .logo{
+    width: 250px;
+    margin: 0 50px;
+    float: left;
+}
+.menu h1{
+    font-size: 20px;
+    margin: 14px;
+    float: left;
+}
+.menu img{
+    width: 48px;
+    height: 48px;
+    float: left;
+}
+nav{
+    width: 400px;
+    height: 50px;
+    float: left;
+}
+nav ul{
+    width: 100%;
+    height: 100%;
+}
+nav ul li{
+    display: inline-block;
+    padding: 16px;
+    font-size: 18px;
+    transition: 0.5s;
+}
+nav ul li:hover{
+    color: red;
+}
+.button{
+    float: right;
+    padding: 15px;
+    margin: 0 20px;
+}
+.button a{
+    background-color: rgb(34, 98, 181);
+    color: white;
+    padding: 11px 32px;
+    border-radius: 6px;
+    transition: 0.5s;
+}
+.button a:hover{
+    background-color: white;
+    color: rgb(34, 98, 181);
+    border: 2px solid rgb(34, 98, 181);
+}
+.container{
+    width: 100%;
+    height: 700px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: 0;
+}
+.container .overlay{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.container .box{
+    width: 350px;
+    height: 320px;
+    color: white;
+    position: absolute;
+    padding: 40px;
+    top: 175px;
+    left: 175px;
+    border: 3px solid white;
+    border-bottom: 0;
+    border-radius: 2px;
+    transition: 0.5s;
+}
+.container .line-wrapp{
+    position: absolute;
+    bottom: 0;
+}
+.container .line{
+    width: 40px;
+    height: 3px;
+    background-color: white;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.container .line2{
+    width: 120px;
+    height: 3px;
+    background-color: white;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.container .box h2{
+    font-size: 40px;
+}
+.container2{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    z-index: 0;
+}
+.container2 .box{
+    width: 16.666666%;
+    height: 100%;
+    padding: 64px;
+    color: white;
+}
+.container2 .box .cr{
+    color: white !important;
+}
+.container2 .box i{
+    color: #dc3545;
+    transition: 0.5s;
+}
+.container2 .box:hover{
+    background-color: #dc3545;;
+    .line{
+        background-color: #1b3a61;
+    }
+    .top-i{
+        color: #1b3a61;
+    }
+}
+.container2 .box i{
+    font-size: 56px;
+    margin: 25px;
+}
+.container2 .box h2{
+    padding: 5px 0;
+}
+.container2 .line{
+    width: 40px;
+    height: 3px;
+    background-color: #dc3545;
+    transition: 0.5s;
+}
+.boxs .box p{
+    font-size: 20px;
+    margin: 50px 0;
+
+}
+.cr{
+    font-size: 20px !important;
+    border: 1px solid white;
+    padding: 5px 7px;
+    border-radius: 50%;
+    margin: 0 40px !important;
+}
+.container2 .box1{
+    background-color: #1b3a61;
+}
+.container2 .box2{
+    background-color: #1d3f69;
+}
+.container2 .box3{
+    background-color: #1f4471;
+}
+.container2 .box4{
+    background-color: #224879;
+}
+.container2 .box5{
+    background-color: #244d81;
+}
+.container2 .box6{
+    background-color: #265289;
+}
+.container3{
+    width: 100%;
+    height: 350px;
+    padding: 50px;
+    z-index: 0;
+}
+.container3 .left-content{
+    width: 45%;
+    height: 100%;
+    float: left;
+}
+.container3 h3{
+    margin-bottom: 20px;
+}
+.container3 h1{
+    font-size: 50px;
+}
+.container3 h2{
+    color: #dc3545;
+    font-size: 28px;
+}
+.container3 .right-content{
+    font-size: 20px;
+    color: grey;
+    width: 55%;
+    height: 100%;
+    float: left;
+}
+.container3 pre{
+    margin: 40px 0 0 60px;
+}
+.container4{
+    width: 100%;
+    height: 450px;
+    z-index: 0;
+}
+.container4 .imgs{
+    width: 100%;
+    height: 60%;
+    display: flex;
+    justify-content: center;
+}
+.container4 .imgs img{
+    width: 350px;
+    height: auto;
+    margin: 20px;
+}
+.container4 .imgs .overlay{
+    position: relative;
+    transition: 0.5s;
+}
+.resim{
+    transition: 0.5s;
+}
+.container4 .imgs .overlay:hover{
+    .resim{
+        object-fit: cover;
+        filter: brightness(50%);
+    }
+    .kutu{
+        color: #dc3545;
+    }
+}
+.container4 .imgs .img h1{
+    position: absolute;
+    bottom: 0;
+    width: 300px;
+    font-size: 24px;
+    padding: 22px;
+    margin: 0 40px;
+    text-align: center;
+    background-color: white;
+    box-shadow: 1px 1px 1px 1px rgba(128, 128, 128, 0.8);
+    border-radius: 6px;
+    transition: 0.5s;
+}
+.container4 .container{
+    width: 100%;
+    height: 100px;
+    text-align: center;
+}
+.container4 .container h2{
+    margin: 30px;
+}
+.container4 .container a{
+    background-color: #dc3545;
+    color: white;
+    padding: 8px 30px;
+    border-radius: 4px;
+    transition: 0.5s;
+}
+.container4 .container a:hover{
+    color: #dc3545;
+    background-color: white;
+    border: 2px solid #dc3545;
+}
+.container5{
+    width: 100%;
+    height: 500px;
+    padding: 45px 180px;
+    position: relative;
+}
+.container5 .container{
+    width: 100%;
+    height: 100%;
+}
+.container5 h3{
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+.container5 h2{
+    font-size: 32px;
+}
+.container5 .line-wrapp{
+    display: inline-block;
+    position: absolute;
+    top: 75px;
+    width: 100%;
+    height: 40px;
+}
+
+.container5 .line{
+    width: 40px;
+    height: 3px;
+    background-color: #dc3545;
+    position: absolute;
+    top: 0;
+}
+.container5 p{
+    position: absolute;
+    top: 105px;
+    font-size: 20px;
+    color: gray;
+    margin: 0;
+}
+.container6{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 700px;
+}
+.container6 .overlay{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 125px 150px;
+}
+.container6 .content{
+    width: 100%;
+    height: 450px;
+}
+.container6 .content-l{
+    color: white;
+    width: 50%;
+    height: 450px;
+    float: left;
+}
+.container6 .content-r{
+    width: 50%;
+    height: 450px;
+    float: left;
+}
+.container6 .content-r .box1{
+    float:left
+}
+.container6 .content-r .box2{
+    float: right;
+}
+.container6 .content-r .box{
+    width: 45%;
+    height: 450px;
+    background-color: white;
+}
+.container6 .content-r .box .box-top{
+    width: 100%;
+    height: 50%;
+    padding: 40px 0;
+    text-align: center;
+}
+.container6 .content-r .box .box-bottom{
+    width: 100%;
+    height: 50%;
+    clear: both;
+    text-align: center;
+    border: 1px solid gray;
+    padding: 10px;
+}
+
+.container6 .content-r .box .box-top h1{
+    margin: 15px;
+}
+.box h1{
+    font-size: 40px;
+}
+.box1 h1{
+    color: #1b3a61;
+}
+.box2 h1{
+    color: #dc3545;
+}
+.box-top h2{
+    font-size: 18px;
+}
+.box-bottom h2{
+    margin: 10px;
+}
+.container6 .box1 .line{
+    background-color: #dc3545;
+    width: 10%;
+    height: 3px;
+    margin: 20px 45%;
+}
+
+.container6 .box2 .line{
+    background-color:#1b3a61;
+    width: 10%;
+    height: 3px;
+    margin: 20px 45%;
+}
+.container6 .box a{
+    padding: 8px 80px;
+    border-radius: 6px;
+    color: white; 
+    margin: 20px 10px;
+}
+.container6 .box1 a{
+    background-color: #1b3a61;
+    transition: 0.5s;
+}
+.container6 .box1 a:hover{
+    color: #1b3a61;
+    background-color: white;
+    border: #1b3a61 1px solid;
+    border-radius: 6px;
+}
+
+.container6 .box2 a{
+    background-color:#dc3545;
+    transition: 0.5s;
+}
+.container6 .box2 a:hover{
+    color: #dc3545;
+    background-color: white;
+    border: #dc3545 1px solid;
+    border-radius: 6px;
+}
+
+.container6 .content-l{
+    padding: 60px;
+}
+.container6 .line{
+    width: 10%;
+    height: 3px;
+    background-color: rgb(255, 183, 0);
+    margin: 15px 0;
+}
+.content-l p{
+    font-size: 18px;
+    line-height: 25px;
+    margin-bottom: 30px;
+}
+.content-l h1{
+    font-size: 45px;
+    color: white;
+    margin: 10px 0;
+}
+.content-l a{
+    background-color: #dc3545;
+    color: white;
+    padding: 8px 30px;
+    border-radius: 6px;
+    transition: 0.5s;
+}
+.content-l a:hover{
+    background-color: rgba(0, 0, 0, 0);
+    border: 2px solid #dc3545;
+    color: #dc3545;
+}
+.container7{
+    width: 100%;
+    height: 600px;
+}
+.container7 h1{
+    text-align: center;
+    padding: 40px;
+    font-size: 50px;
+}
+
+.container7 .imgs{
+    width: 100%;
+    height: 60%;
+    display: flex;
+    justify-content: center;
+}
+.container7 .imgs img{
+    width: 350px;
+    height: auto;
+    margin: 20px;
+}
+.container7 .imgs .overlay{
+    position: relative;
+    transition: 0.5s;
+}
+.resim{
+    transition: 0.5s;
+}
+.container7 .imgs .overlay:hover{
+    .resim{
+        object-fit: cover;
+        filter: brightness(50%);
+    }
+    .kutu{
+        color: #dc3545;
+    }
+}
+.container7 .imgs .img .kutu{
+    position: absolute;
+    bottom: 0;
+    width: 300px;
+    padding: 10px;
+    margin: 0 40px;
+    text-align: center;
+    background-color: white;
+    box-shadow: 1px 1px 1px 1px rgba(128, 128, 128, 0.8);
+    border-radius: 6px;
+    transition: 0.5s;
+}
+.container7 h1{
+    color: #000;
+    font-size: 24px;
+    padding: 10px;
+}
+.container7 h2{
+    color: #dc3545;
+}
+.container7 .icons{
+    margin: 10px;
+}
+.container7 i{
+    margin: 5px;
+}
+.container8{
+    width: 100%;
+    height: 500px;
+    padding: 50px 150px;
+    display: flex;
+}
+.container8 .buttons{ 
+    width: 20%;
+    height: 100%;
+    padding: 20px 0;
+}
+.container8 .buttons a{
+    display: block;
+    width: 100%;
+    padding: 25px 0;
+    background-color: white;
+    box-shadow: 1px 1px 1px 1px rgba(128, 128, 128, 0.5);
+    margin-bottom: 10%;
+    text-align: center;
+    color: black;
+    font-size: 24px;
+    transition: 0.5s;
+}
+.container8 .buttons .btn-f{
+    background-color: #dc3545;
+    color:white;
+}
+.container8 .buttons a:hover{
+    background-color: #dc3545;
+    color:white;
+}
+.container8 .text{
+    width: 70%;
+    height: 100%;
+    margin: 0 100px;
+    font-size: 24px;
+}

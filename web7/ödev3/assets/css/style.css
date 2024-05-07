@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+}
+.container{
+    background-color: rgba(1,227,127,255);
+    width: 99.75%;
+    height: 99vh;
+    border-radius: 10px;
+    position: relative;
+}
+.product{
+    position: absolute;
+    top: 20%;
+    right: 30%;
+    width: 40%;
+    height: 60%;
+    border-radius: 6px;
+    background-color: white;
+}
+.image{
+    color: white;
+    position: absolute;
+    top: 25%;
+    right: 55%;
+    background-color: #b9ec47;
+    width: 18%;
+    height: 50%;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px #aaaaaa;
+}
+.image img{
+    position: absolute;
+    top: 70px;
+    right: 0;
+    width: 320px;
+    height: auto;
+}
+.image footer{
+    background-color: white;
+    width: 100%;
+    height: 17%;
+    position: absolute;
+    bottom: 0;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.image footer ul{
+    position: absolute;
+    left: 12%;
+    top: 10%;
+    width: 80%;
+    height: 80%;
+}
+.image footer ul li{
+    border: 1px solid gray;
+    width: 22%;
+    height: 99%;
+    display: inline-block;
+}
+.image footer ul li #i1{
+    position: absolute;
+    top: 10px;
+    left: 0;
+    width: 40px; 
+    height: auto;
+}
+.image footer ul li #i2{
+    position: absolute;
+    top: 0;
+    left: 25%;
+    width: 40px; 
+    height: auto;
+}
+.image footer ul li #i3{
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    width: 40px; 
+    height: auto;
+}
+.image footer ul li #i4{
+    position: absolute;
+    top: 0;
+    left: 72%;
+    width: 40px; 
+    height: auto;
+}
+.kalp{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+.paylas{
+    position: absolute;
+    top: 15px;
+    left: 15px;
+}
+.content{
+    position: absolute;
+    right: 10%;
+    top: 10%;
+}
+.content p{
+    color: grey;
+}
+.p2{
+    position: absolute;
+    top: 120px;
+}
+.content h2{
+    font-size: 50px;
+    color: rgb(255, 81, 81);
+}
+.content sub{
+    font-size: 20px;
+}
+.content .l1{
+    position: absolute;
+    top: 140px;
+}
+.content .l1 li{
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    border: 1px #aaaaaa solid;
+}
+.p3{
+    position: absolute;
+    top: 170px;
+}
+.l2{
+    position: absolute;
+    top:200px;
+    width: 100%;
+}
+.l2 li{
+    list-style-type: disc;
+}
+button{
+    position: absolute;
+    top: 340px;
+    color: white;
+    padding: 10px;
+    border-radius: 6px;
+    background-color: rgb(228, 40, 59);
+}
